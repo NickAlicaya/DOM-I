@@ -40,3 +40,47 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//this is to update the nav
+// let link1 =document.querySelector('a');
+// link1.textContent="Services";
+
+let links=document.querySelectorAll('a')
+links[0].setAttribute('class', '.nav-item-1')
+links[0].innerText="Service"
+links[1].setAttribute('class', '.nav-item-2')
+links[1].innerText="Product"
+links[2].setAttribute('class', '.nav-item-3')
+links[2].innerText="Vision"
+links[3].setAttribute('class', '.nav-item-4')
+links[3].innerText="Features"
+links[4].setAttribute('class', '.nav-item-5')
+links[4].innerText="About"
+links[5].setAttribute('class', '.nav-item-6')
+links[5].innerText="Contact"
+
+//CTA update
+let heading = document.querySelector('h1')
+heading.textContent=siteContent['cta']['h1']
+
+let topLogo = document.querySelector('#cta-img')
+topLogo.setAttribute('src', siteContent["cta"]["img-src"])
+
+let topButton = document.querySelector('button')
+topButton.innerText='Get Started'
+
+//Main Content
+ let mainContent = document.querySelectorAll('.text-content')
+ mainContent[0].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+ mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content']
+ mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
+ mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content']
+ mainContent[2].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+ mainContent[2].querySelector('p').textContent = siteContent['main-content']['services-content']
+ mainContent[3].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+ mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
+ mainContent[4].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+ mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+
+ let midLogo=document.querySelector("#middle-img")
+ midLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"])
