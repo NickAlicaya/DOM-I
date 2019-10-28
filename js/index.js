@@ -59,6 +59,23 @@ links[4].innerText="About"
 links[5].setAttribute('class', '.nav-item-6')
 links[5].innerText="Contact"
 
+links.forEach(link => link.style.color='green')
+
+// apprend and prepend 2 items
+const newLink1 = document.createElement('a')
+const newNav = document.querySelector('nav')
+newLink1.textContent ='Disclaimer'
+newLink1.href ='#'
+newNav.append(newLink1)
+newLink1.style.color = 'green'
+
+const newLink2 = document.createElement('a')
+newLink2.textContent = 'Support'
+newLink2.href = '#'
+newNav.prepend(newLink2)
+newLink2.style.color = 'green'
+
+
 //CTA update
 let heading = document.querySelector('h1')
 heading.textContent=siteContent['cta']['h1']
