@@ -84,3 +84,14 @@ topButton.innerText='Get Started'
 
  let midLogo=document.querySelector("#middle-img")
  midLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+ //Contact
+ let mainContact=document.querySelector('.contact')
+ mainContact.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
+ mainContact.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+ mainContact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
+ mainContact.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+ //YAY FOOTER at LAST!
+ let footer=document.querySelector('footer')
+ footer.textContent="Copyright Great Idea! 2018"
