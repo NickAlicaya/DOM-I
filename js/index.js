@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //this is to update the nav
-// let link1 =document.querySelector('a');
+// let link1 =document.querySelectorAll('a');
 // link1.textContent="Services";
 
 let links=document.querySelectorAll('a')
@@ -104,10 +104,11 @@ topButton.innerText='Get Started'
  //Contact
  let mainContact=document.querySelector('.contact')
  mainContact.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
- mainContact.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+//  mainContact.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+ mainContact.getElementsByTagName('p')[0].innerHTML = "123 Way 456 Street <br />Somewhere, USA",
  mainContact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
  mainContact.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
 
  //YAY FOOTER at LAST!
- let footer=document.querySelector('footer')
- footer.textContent="Copyright Great Idea! 2018"
+ document.querySelector('footer p').textContent =siteContent['footer']['copyright']
+//  footer.textContent="Copyright Great Idea! 2018"
