@@ -75,10 +75,9 @@ newLink2.href = '#'
 newNav.prepend(newLink2)
 newLink2.style.color = 'green'
 
-
 //CTA update
-let heading = document.querySelector('h1')
-heading.textContent=siteContent['cta']['h1']
+let newDom = document.querySelector('.cta .cta-text h1')
+newDom.innerHTML='DOM<br /> IS <br /> Awesome'
 
 let topLogo = document.querySelector('#cta-img')
 topLogo.setAttribute('src', siteContent["cta"]["img-src"])
